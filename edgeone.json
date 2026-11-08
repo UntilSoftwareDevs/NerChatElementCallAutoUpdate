@@ -1,0 +1,19 @@
+{
+  "headers": [
+    {"source": "/*", "headers": [
+      {"key": "Content-Security-Policy", "value": "frame-ancestors 'self' https://chat.neboer.site"},
+      {"key": "X-Content-Type-Options", "value": "nosniff"},
+      {"key": "Referrer-Policy", "value": "strict-origin-when-cross-origin"}
+    ]},
+    {"source": "/config.json", "headers": [{"key": "Cache-Control", "value": "no-store"}]},
+    {"source": "/nerchat-release.json", "headers": [{"key": "Cache-Control", "value": "no-store"}]},
+    {"source": "/index.html", "headers": [{"key": "Cache-Control", "value": "no-cache"}]}
+  ],
+  "caches": [
+    {"source": "/", "cacheTtl": 0},
+    {"source": "/index.html", "cacheTtl": 0},
+    {"source": "/config.json", "cacheTtl": 0},
+    {"source": "/nerchat-release.json", "cacheTtl": 0}
+  ],
+  "rewrites": [{"source": "/*", "destination": "/index.html"}]
+}

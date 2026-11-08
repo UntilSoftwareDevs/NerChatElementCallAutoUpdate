@@ -1,0 +1,10 @@
+{
+  "name": "nerchat-element-call-auto-update",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "edgeone": "1.6.47",
+    "@edgeone/makers-sdk": "0.1.0"
+  }
+}
